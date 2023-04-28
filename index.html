@@ -36,7 +36,72 @@ window.dataLayer.push(
 }
 });
 </script>
-         
+
+      <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'item1',
+        ecommerce:
+        {
+            item_name:"Cia1",
+            item_id:"Web1",
+            item_cat:"Online Courses",
+}
+});
+</script>
+      <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'item2',
+        ecommerce:
+        {
+            item_name:"Cia2",
+            item_id:"Web2",
+            item_cat:"Offline Courses",
+}
+});
+</script>
+      <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'item3',
+        ecommerce:
+        {
+            item_name:"MidSem",
+            item_id:"Web3",
+            item_cat:"Online Courses",
+}
+});
+</script>
+      <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'item4',
+        ecommerce:
+        {
+            item_name:"Cia4",
+            item_id:"Web4",
+            item_cat:"Online Courses",
+}
+});
+</script>
+      <script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push(
+{
+  event : 'item5',
+        ecommerce:
+        {
+            item_name:"EndSem",
+            item_id:"Web5",
+            item_cat:"Online Courses",
+}
+});
+</script>
     
     <script>
 window.dataLayer = window.dataLayer ||[];
@@ -120,8 +185,121 @@ src="https://www.youtube.com/embed/il_t1WVLNxk"&gt;
                 }]
           });
       });
-  
- 
+
+          
+          
+    document.getElementById("purchase").addEventListener("click", function () {
+        gtag("event", "purchase", {
+                // This purchase event uses a different transaction ID
+                // from the previous purchase event so Analytics
+                // doesn't deduplicate the events.
+                // Learn more: https://support.google.com/analytics/answer/12313109
+                transaction_id: "T12_12",
+                value: 25.42,
+                tax: 3.0,
+                shipping: 5.92,
+                currency: "USD",
+                coupon: "SUMMER_SALE",
+                items: [
+                {
+                  item_id: "Web1",
+                  item_name: "Cia1",
+                  affiliation: "Google Merchandise Store",
+                  coupon: "SUMMER_FUN",
+                  discount: 2.22,
+                  index: 0,
+                  item_brand: "Google",
+                  item_category: "Apparel",
+                  item_category2: "MCQ",
+                  item_category3: "Theory",
+                  item_category4: "OnlineTest",
+                  item_category5: "WrittenTest",
+                  item_list_id: "related_products",
+                  item_list_name: "Related Products",
+                  item_variant: "green",
+                  location_id: "CCKSKSKSKSKWKo",
+                  price: 4.99,
+                  quantity: 1
+                },
+                {
+                  item_id: "Web2",
+                  item_name: "Cia2",
+                  affiliation: "Google Merchandise Store",
+                  coupon: "SUMMER_FUN",
+                  discount: 2.22,
+                  index: 0,
+                  item_brand: "Google",
+                  item_category: "Apparel",
+                  item_category2: "MCQ",
+                  item_category3: "Practical",
+                  item_category4: "OnlineTest",
+                  item_category5: "WrittenTest",
+                  item_list_id: "related_products",
+                  item_list_name: "Related Products",
+                  item_variant: "green",
+                  location_id: "CWEKSJFSSSKWKo",
+                  price: 4.99,
+                  quantity: 1
+                },
+                {
+                  item_id: "Web3",
+                  item_name: "MidSem",
+                  affiliation: "Google Merchandise Store",
+                  coupon: "SUMMER_FUN",
+                  discount: 2.22,
+                  index: 0,
+                  item_brand: "Google",
+                  item_category: "Apparel",
+                  item_category2: "Theory",
+                  item_category3: "WrittenTest",
+                  item_list_id: "related_products",
+                  item_list_name: "Related Products",
+                  item_variant: "green",
+                  location_id: "BSHOIRNDKAHSJUUSW",
+                  price: 4.99,
+                  quantity: 1
+                },
+                {
+                  item_id: "Web4",
+                  item_name: "Cia4",
+                  affiliation: "Google Merchandise Store",
+                  coupon: "SUMMER_FUN",
+                  discount: 2.22,
+                  index: 0,
+                  item_brand: "Google",
+                  item_category: "Apparel",
+                  item_category2: "Assignment",
+                  item_category3: "Theory",
+                  item_category4: "OnlineTest",
+                  item_category5: "Video presentation",
+                  item_list_id: "related_products",
+                  item_list_name: "Related Products",
+                  item_variant: "green",
+                  location_id: "CCJJSOOAKWJHRNSM",
+                  price: 4.99,
+                  quantity: 1
+                },
+                {
+                  item_id: "Web5",
+                  item_name: "EndSem",
+                  affiliation: "Google Merchandise Store",
+                  coupon: "SUMMER_FUN",
+                  discount: 2.22,
+                  index: 0,
+                  item_brand: "Google",
+                  item_category: "Apparel",
+                  item_category2: "WrittenTest",
+                  item_category3: "Theory",
+                  item_category4: "OfflineTest",
+                  item_list_id: "related_products",
+                  item_list_name: "Related Products",
+                  item_variant: "green",
+                  location_id: "HGDASFJKLOIPUEW",
+                  price: 4.99,
+                  quantity: 1
+                }]
+          });
+      });
           
           
           
